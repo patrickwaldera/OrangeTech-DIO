@@ -1,6 +1,7 @@
-import React from 'react'
+
 import { Button } from '../Button'
 import logo from '../../assets/logo-dio.png'
+import { useNavigate } from 'react-router-dom'
 
 import {
     Container,
@@ -15,6 +16,8 @@ import {
 import { IHeader } from './types'
 
 const Header = ({autenticado}: IHeader) => {
+  const navigate = useNavigate()
+
   return (
     <Wrapper>
         <Container>
@@ -37,9 +40,9 @@ const Header = ({autenticado}: IHeader) => {
                 </>
             ) : (
                 <>
-                    <MenuRight href='#'>Home</MenuRight>
-                    <Button title="Entrar"/>
-                    <Button title="Cadastrar"/>
+                    <MenuRight href='#' onClick={() => navigate('/')}>Home</MenuRight>
+                    <Button  onClick={() => navigate('/login')} title="Entrar"/>
+                    <Button  onClick={() => navigate('/register')} title="Cadastrar"/>
                 </>
             )}
             </Row>

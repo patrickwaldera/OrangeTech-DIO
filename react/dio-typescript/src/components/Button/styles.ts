@@ -11,6 +11,8 @@ export const ButtonContainer = styled.button<IButtonStyled> `
     min-width: 120px;
     width: 100%;
 
+    cursor: pointer;
+
     ${({variant}) => variant !== "primary" && css `
         min-width: 167px;
         height: 33px;

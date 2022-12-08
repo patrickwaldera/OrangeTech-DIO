@@ -12,20 +12,8 @@ export const Container = styled.main`
     align-items: center;
 `
 
-export const Wrapper = styled.div`
-    max-width: 300px;
-`
-
 export const Column = styled.div `
     flex: 1;
-`
-
-export const Row = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
 `
 
 export const Title = styled.h2`
@@ -33,7 +21,7 @@ export const Title = styled.h2`
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    width: 320px;
+    width: 380px;
     margin-bottom: 20px;
     line-height: 44px;
 
@@ -58,22 +46,29 @@ export const SubTitleLogin = styled.p`
     line-height: 25px;
 `
 
-export const EsqueciText = styled.p`
+export const WithAccount = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
 
-    color: #e5e044;
+    color: #FFFFFF;
 `
 
-export const CriarText = styled.p`
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 19px;
+export const FazerLogin = styled.a`
+    color: #23DD7A;
+    text-decoration: none;
+`
 
-    color: #e23dd7;
+export const Wrapper = styled.div`
+    max-width: 300px;
+`
+
+export const Row = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
 `
